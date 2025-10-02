@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:16-alpine3.22
+    ports:
+      - "5432:5432"
+    container_name: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: learningdb
+    volumes:
+      - ./data:/var/lib/postgresql/data
+      - ./sql_scripts:/docker-entrypoint-initdb.d
+
+  pgadmin:
+    image: dpage/pgadmin4:9.8.0
+    ports:
+      - "5050:80"
+    container_name: pgadmin
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: password
