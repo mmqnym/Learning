@@ -2,8 +2,9 @@
 
 在這個課程中，將一步一步練習與學習 SQL 技能，提升技能等級至專業。
 此系列筆記為參考以下 Udemy 課程人工編寫而成，建議購買相關課程，本筆記僅以實作為主：
-講師：Nikolai Schuler 
-課程：Master SQL in just 15 days from Basics to Pro by working daily on real-life projects
+
+- 講師：Nikolai Schuler 
+- 課程：Master SQL in just 15 days from Basics to Pro by working daily on real-life projects
 
 # 配置
 
