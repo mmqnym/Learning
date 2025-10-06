@@ -23,9 +23,13 @@
 
 # 行前說明
 
-1. 一但配置完成，可以在 `<db_name>/Schemas/public` 選單上按滑鼠右鍵，點擊 `Query Tool`，進入 SQL 查詢介面，開始練習。
+1. 一但配置完成，可以在 `<db_name>/Schemas/public` 選單上按滑鼠右鍵，點擊 `Query Tool`，進入 SQL 查詢介面，先輸入 
+    ```sql
+    ALTER DATABASE learningdb SET timezone TO 'Europe/Berlin';
+    ```
+    設定時區後就可以開始練習了。
 2. SQL 一般習慣欄位名稱以小寫為主，並以 `_` 連接，例如 `first_name`，而非 `firstName`，此稱為**底線式命名法**。
 3. 在 SQL 中，語句格式或大小寫不影響結果，但是約定俗成的格式可以增強可讀性。
 4. 在 SQL 中，與程式語言不同，Index 由 `1` 開始編號，不是 `0`。
 5. 許多查詢使用 `column_index` 也可以，但非常不推薦這樣做，因為會導致失去可讀性，因此本系列筆記僅使用 `column_name`。
-6. 有些題目為 UDEMY 課程提供的練習題，並非原作者提供，因此在本地環境下有些題目無法實際練習，僅需確認自己的 SQL 語句是否與答案相似即可。
+6. 有些題目為講師在 UDEMY 課程上提供的練習題，表內容與 `pagila-master` 不同，因此在本地環境下有些題目無法實際練習，僅需確認自己的 SQL 語句是否與答案相似即可。
