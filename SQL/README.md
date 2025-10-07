@@ -17,9 +17,13 @@
 2. 建立 `sql_scripts` 資料夾
 3. 將 `pagila-insert-data.sql` 檔案剪下貼到 `sql_scripts` 資料夾中。
 4. 執行 `docker-compose up -d`
+5. 解壓縮其餘的壓縮檔 `learning_data/*.zip`，得到其他 `.sql` 檔案。
+6. 將這些檔案剪下貼到 `psql_scripts` 資料夾中。
 5. 進入 `http://localhost:5050`，利用 `docker-compose.yml` 設定的帳號密碼登入 `pgadmin`
-6. 連線到 `postgres` 資料庫，`host` 為 `postgres`，帳號密碼請參考 `docker-compose.yml`
+6. 連線到資料庫，`host` 為 `postgres`，帳號密碼請參考 `docker-compose.yml`
 7. 完成配置，開始練習！
+
+**NOTE**: 進入中級階段前，請先閱讀**基礎階段**的最後一個筆記的章節挑戰。
 
 # 行前說明
 

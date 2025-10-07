@@ -1,3 +1,4 @@
 # postgresql local data
 data
 sql_scripts
+psql_scripts
